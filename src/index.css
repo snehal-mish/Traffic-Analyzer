@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-surface: #0f131c;
+  --color-surface-lowest: #0a0e17;
+  --color-surface-low: #181b25;
+  --color-surface-container: #1c1f29;
+  --color-surface-high: #262a34;
+  --color-surface-highest: #31353f;
+  --color-on-surface: #dfe2ef;
+  --color-on-surface-variant: #b9cacb;
+
+  --color-cyan-neon: #00f0ff;
+  --color-cyan-dim: #00dbe9;
+  --color-emerald-neon: #00fe66;
+  --color-emerald-dim: #00e55b;
+  --color-violet-deep: #220844;
+  --color-violet-glow: #d6baff;
+  --color-alert-red: #ff2a5f;
+  --color-caution-amber: #ffb800;
+}
+
+@layer base {
+  * {
+    border-radius: 0px;
+  }
+
+  html,
+  body {
+    background-color: #0a0e17;
+    color: #dfe2ef;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glassmorphic telemetry surface */
+.hud-glass {
+  background: rgba(19, 27, 46, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.hud-glass-violet {
+  background: rgba(24, 18, 43, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(214, 186, 255, 0.22);
+}
+
+.hud-glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.16);
+}
+
+.hud-glow-emerald {
+  box-shadow: 0 0 15px rgba(0, 254, 102, 0.14);
+}
+
+.hud-glow-red {
+  box-shadow: 0 0 16px rgba(255, 42, 95, 0.22);
+}
+
+.hud-chamfer {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    0 100%
+  );
+}
+
+.hud-chamfer-sm {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* Segmented cyberpunk data slider */
+input[type="range"].cyber-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(0, 240, 255, 0.28) 0px,
+    rgba(0, 240, 255, 0.28) 6px,
+    #0a0e17 6px,
+    #0a0e17 9px
+  );
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"].cyber-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 18px;
+  background: #00f0ff;
+  border: 1px solid #dbfcff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+  cursor: pointer;
+}
+
+input[type="range"].cyber-slider::-moz-range-thumb {
+  width: 14px;
+  height: 18px;
+  border-radius: 0;
+  background: #00f0ff;
+  border: 1px solid #dbfcff;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+  cursor: pointer;
+}
+
+/* Custom crisp scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23324f;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00dbe9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

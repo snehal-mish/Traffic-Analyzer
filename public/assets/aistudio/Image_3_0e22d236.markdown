@@ -1,0 +1,165 @@
+---
+name: Cyberpunk Urban Traffic AI
+colors:
+  surface: '#0f131c'
+  surface-dim: '#0f131c'
+  surface-bright: '#353943'
+  surface-container-lowest: '#0a0e17'
+  surface-container-low: '#181b25'
+  surface-container: '#1c1f29'
+  surface-container-high: '#262a34'
+  surface-container-highest: '#31353f'
+  on-surface: '#dfe2ef'
+  on-surface-variant: '#b9cacb'
+  inverse-surface: '#dfe2ef'
+  inverse-on-surface: '#2c303a'
+  outline: '#849495'
+  outline-variant: '#3b494b'
+  surface-tint: '#00dbe9'
+  primary: '#dbfcff'
+  on-primary: '#00363a'
+  primary-container: '#00f0ff'
+  on-primary-container: '#006970'
+  inverse-primary: '#006970'
+  secondary: '#ebffe6'
+  on-secondary: '#003911'
+  secondary-container: '#00fe66'
+  on-secondary-container: '#007128'
+  tertiary: '#fcf3ff'
+  on-tertiary: '#3b245d'
+  tertiary-container: '#e5d1ff'
+  on-tertiary-container: '#6b538f'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#7df4ff'
+  primary-fixed-dim: '#00dbe9'
+  on-primary-fixed: '#002022'
+  on-primary-fixed-variant: '#004f54'
+  secondary-fixed: '#6bff83'
+  secondary-fixed-dim: '#00e55b'
+  on-secondary-fixed: '#002107'
+  on-secondary-fixed-variant: '#00531b'
+  tertiary-fixed: '#ecdcff'
+  tertiary-fixed-dim: '#d6baff'
+  on-tertiary-fixed: '#250c47'
+  on-tertiary-fixed-variant: '#523b76'
+  background: '#0f131c'
+  on-background: '#dfe2ef'
+  surface-variant: '#31353f'
+typography:
+  headline-xl:
+    fontFamily: Space Grotesk
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.05em
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 10px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+spacing:
+  gutter: 1rem
+  margin: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+This design system embraces a high-contrast futuristic aesthetic that combines sleek cyberpunk elements with rigorous modern urban infrastructure data-monitoring needs. The interface evokes a sense of absolute precision, real-time control, and high-stakes operations.
+
+Targeting urban planners, autonomous transit dispatchers, and system operators, the UI demands extreme legibility combined with an immersive atmospheric feel. The visual experience is anchored by deep, absorbing dark backgrounds that recede into the void, allowing critical telemetry, alerts, and spatial nodes to pop with luminous clarity. 
+
+Design Style: **High-Contrast / Bold** mixed with **Glassmorphism** for telemetry overlays. The visual hierarchy utilizes razor-sharp edges, translucent glass panels with subtle backdrop blurs, and vibrant glowing neon accents to communicate status instantaneously without fatiguing the operator over long shifts.
+
+## Colors
+The color architecture relies on absolute dark zinc and slate foundations to maximize contrast for luminous data points. 
+
+- **Primary:** Neon Cyan (`#00F0FF`) dictates active routing vectors, primary interactive states, and core system telemetry.
+- **Secondary:** Emerald Green (`#00FF66`) signals optimal flow, nominal vehicle states, and system success metrics.
+- **Tertiary:** Deep Violet (`#220844`) serves as a secondary framing tone for deep analytics and regional sectors.
+- **Neutral:** Deep Slate (`#090D16` canvas, `#131B2E` surface containers, `#23324F` borders) structures the dense layout hierarchy.
+- **System Feedback:** Dynamic alerts utilize High-Alert Red (`#FF2A5F`) and Caution Amber (`#FFB800`).
+
+## Typography
+Typography is split purposefully between geometric authority for structural headers and high-precision monospaced forms for rapid data parsing.
+
+- **Headlines:** *Space Grotesk* provides an engineered, futuristic geometric structure suited for high-level telemetry metrics and dashboard titles.
+- **Body & Labels:** *JetBrains Mono* ensures tabular data, coordinate systems, timestamps, and system logs remain perfectly aligned and readable at a glance.
+
+Ensure all numeric data utilizes tabular figures to prevent jitter during live traffic flux updates. Font sizes above 32px must scale down on viewports under 768px.
+
+## Layout & Spacing
+The layout relies on a strict **12-column fluid grid** system engineered for dense data displays, multi-monitor operations, and real-time map feeds. 
+
+- **Gutters & Margins:** 16px (`1rem`) gutters separate dense analytical modules, while outer margins scale from 16px on mobile to 24px (`1.5rem`) on desktop.
+- **Spacing Rhythm:** Built on an 4px base scale, utilizing tighter gaps (`space-xs`, `space-sm`) inside telemetry readouts and structured spacing (`space-md`, `space-lg`) for card containers.
+- **Breakpoints:** Mobile (`< 768px`, single-column stacked telemetry), Tablet (`768px - 1279px`, two-column split view), Desktop (`≥ 1280px`, full multi-panel command center layout).
+
+## Elevation & Depth
+Depth is achieved primarily through **Glassmorphism** and low-opacity chromatic layering rather than traditional drop shadows. 
+
+- **Surfaces:** Utilize semi-transparent deep slate surfaces (`#131B2E` at 85% opacity) coupled with high-end backdrop blurs (`blur(16px)`) to establish floating analytical panels over live map feeds.
+- **Borders & Glows:** Outer boundaries are defined by "ghost borders" using low-opacity cyan or zinc lines (`1px solid rgba(0, 240, 255, 0.2)`). Active states, warnings, and high-priority cards emanate subtle, diffuse ambient glow vectors (`box-shadow: 0 0 15px rgba(0, 240, 255, 0.15)`) to guide operator focus instantly.
+
+## Shapes
+The shape language is strictly **Sharp (0px roundedness)** to reinforce the technical, militaristic, and high-precision aesthetic of an urban AI command system. 
+
+- **Geometry:** All buttons, data cards, input fields, and structural containers feature 0px border radii with crisp, orthogonal intersections. 
+- **Accents:** Small technical notches or diagonal corner cutouts (`clip-path`) may be applied selectively to primary frame headers and modal containers to enhance the cyberpunk HUD aesthetic.
+
+## Components
+Components are engineered for zero-latency visual confirmation and high-density information architecture.
+
+- **Buttons:** Sharp-edged rectangular blocks with high-contrast text. Primary actions utilize a solid Neon Cyan fill with dark text and a hard glowing outline; secondary actions use transparent backgrounds with a 1px cyan border and glowing hover state.
+- **Chips & Tags:** Compact, monospaced status badges with sharp corners, featuring subtle background fills (e.g., emerald green background at 15% opacity with solid green text) to denote vehicle flows or AI confidence levels.
+- **Input Fields:** Deep slate backgrounds with 1px zinc borders that shift to solid neon cyan upon focus. Include integrated terminal-style carets and monospaced placeholder text.
+- **Checkboxes & Radios:** Sharp square and diamond geometries replacing standard rounded inputs, utilizing bright cyan indicators when toggled active.
+- **Cards & Telemetry Panels:** Translucent glassmorphism containers featuring explicit grid coordinates in the header, live status indicator pips, and top-border accent lines indicating module health.
+- **Additional Command Elements:** 
+  - *Data Sliders:* Segmented track lines with glowing cyan thumb nodes for manual AI intervention thresholds.
+  - *Live Feed Viewports:* Embedded video/vector map containers with corner crosshairs and real-time coordinate overlays.
+  - *Terminal Logs:* Monospaced scrolling event feeds with color-coded severity levels (Cyan for info, Amber for warnings, Red for system overrides).

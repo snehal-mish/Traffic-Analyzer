@@ -1,0 +1,6 @@
+{
+  "name": "Vectra Grid — Urban Traffic AI",
+  "description": "Real-time urban traffic AI command center for intersection telemetry, corridor routing, and autonomous fleet dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
